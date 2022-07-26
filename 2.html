@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+        <label for="num1">Enter number 1</label>
+        <input type="text" id="num1"><br>
+        <label for="num2">Enter number 2</label>
+        <input type="text" id="num2"><br>
+        <button onclick="display()">Enter</button>
+    
+
+    <p>The sum is:</p>
+    <p id="ans"></p>
+
+    <script>
+        function display(){
+        var num1 = document.getElementById("num1").value
+        var num2 = document.getElementById("num2").value
+
+        console.log(num1)
+        console.log(num2)
+
+        var ans = +num1 + +num2;
+
+        document.getElementById("ans").innerHTML=ans;
+        console.log("The sum is: "+ans);
+
+        
+
+
+        }
+        
+
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Enter a limit:<input type="text" id="limit"></span ><br><br>
+    <button onclick="oddSum()">Enter</button><br><br>
+    <span>Sum of odd numbers: <span  id="outpt"></span></span>
+    
+    <script>
+        function oddSum(){
+            var limit = document.getElementById("limit").value
+
+            var i;
+            var sum=0;
+            for(i=1; i<=limit;i++){
+                if(i%2!=0){
+                    sum+=+i;
+                }
+            }
+            document.getElementById("outpt").innerHTML=sum;
+            console.log("Sum of odd numbers:"+sum)
+        }
+
+    </script>
+</body>
+</html>

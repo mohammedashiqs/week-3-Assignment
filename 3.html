@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u> Simple Interest</u></h1>
+    <p>Enter the values:</p>
+    <p>Principal amount(P): <br></amount:br> <input type="text" id="p"><br>
+       Interest rate(R):<br> <input type="text" id="r"> <br>
+       Numbers of years(n):<br> <input type="text" id="n"><br>
+       <button onclick="findSimpleInterest()">Enter</button>
+    </p>
+
+    <p><b>Simple Interest(SI):</b></p>
+    <p id="ans"></p>
+
+
+    <script>
+
+        function findSimpleInterest(){
+        var p = document.getElementById("p").value
+        var r = document.getElementById("r").value
+        var n = document.getElementById("n").value
+
+        var si = (p*r*n)/100;
+
+        document.getElementById("ans").innerHTML=si;
+
+        console.log("Simple Interest: "+si)
+
+        }
+
+    </script>
+
+</body>
+</html>

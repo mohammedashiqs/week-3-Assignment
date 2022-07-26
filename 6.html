@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter the number b/w 1-7:</h1>
+    <input type="text" id="inp"><br><br>
+    <button onclick="findDay()">submit</button><br><br>
+    <span>Day: <span id="day"></span></span>
+
+
+
+    <script>
+        function findDay(){
+            
+            var num = document.getElementById("inp").value
+
+            switch (num){
+                case "1":
+                    var x = document.getElementById("day").innerHTML="Sunday"
+                    break;
+                case "2":
+                    var x = document.getElementById("day").innerHTML="Monday"
+                    break;
+                case "3":
+                    var x = document.getElementById("day").innerHTML="Tuesday"
+                    break;
+                case "4":
+                    var x = document.getElementById("day").innerHTML="Wednesday"
+                    break;
+                case "5":
+                    var x = document.getElementById("day").innerHTML="Thursday"
+                    break;
+                case "6":
+                    var x = document.getElementById("day").innerHTML="Friday"
+                    break;
+                case "7":
+                    var x = document.getElementById("day").innerHTML="Saturday"
+                    break;
+                default:
+                    var x = document.getElementById("day").innerHTML="Hay fool! Invalid Entry!"
+            }
+            
+            console.log("Day:"+x)
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <label for="inp">Enter a Character</label><br>
+    <input type="text" id="inp"><br>
+    <button onclick="display()">click</button>
+
+    <h1 id="outpt"></h1>
+
+
+    <script>
+
+        function display(){
+        var char = document.getElementById("inp").value
+        document.getElementById("outpt").innerHTML = "The character you have entered is:  "+char;
+        console.log("The character you have entered is: "+char)
+    }
+    </script>
+
+    
+</body>
+</html>

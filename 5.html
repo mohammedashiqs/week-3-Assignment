@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter your mark</h1>
+    <input type="text" id="mark"><br>
+    <button onclick="validation()">Submit</button><br>
+    <span>Grade:<span id="grade"></span></span>
+
+    <script>
+
+        function validation(){
+        var mark = document.getElementById("mark").value
+        
+        if(mark>=0&&mark<=100){
+            if(mark>90){
+               var x = document.getElementById("grade").innerHTML="A"
+            }else if(mark>=80&&mark<=90){
+                var x =  document.getElementById("grade").innerHTML="B"
+            }else if(mark>=70&&mark<=79){
+                var x =  document.getElementById("grade").innerHTML="C"
+            }
+            else if(mark>=60&&mark<=69){
+                var x =  document.getElementById("grade").innerHTML="D"
+            }
+            else if(mark>=50&&mark<=59){
+                var x =  document.getElementById("grade").innerHTML="E"
+            }
+            else{
+                var x =  document.getElementById("grade").innerHTML="Failed"
+            }
+
+            console.log("Result:"+x)
+
+        }else{
+            var x =  document.getElementById("grade").innerHTML="Invalid Entry"
+        }
+
+    }
+
+    </script>
+</body>
+</html>

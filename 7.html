@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u> Multiplication Table</u></h1>
+    <span><b>Enter a number:</b> </span>
+    <input type="text" id="num"><br><br>
+    <button onclick="multiplay()">Enter</button>
+    <p id="outpt"></p>
+
+    
+    
+
+    <script>
+        function multiplay(){
+        var num = document.getElementById("num").value
+            var i;
+            n=10;
+        for(i=1; i<=n;i++){
+            console.log(" "+i+" x "+num+" ="+i*num)
+        }
+
+        }
+
+    </script>
+
+</body>
+</html>
